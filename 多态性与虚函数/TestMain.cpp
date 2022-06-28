@@ -1,27 +1,19 @@
 #include"Test.h"
-/*void EasyShow(Info* pInfo) //µÚ¶þÖÖ·½·¨
+/*void EasyShow(Info* pInfo) //ç¬¬äºŒç§æ–¹æ³•
 {
 	pInfo->Prompt();
 	pInfo->Show();
 }*/
 
-void Fun(Info& i)
-{
-	i.Show();
-	i.Prompt();
-}
 int main()
 {
 	Person per("Lily");
-	Undergraduate und("Lucy", 99, 95);  //ÓÐ¶àÉÙ¸öÊý¾Ý¿Ó¾ÍÌî¶àÉÙ¸öÊý¾Ý¡°¡±ÀïÃæµÄÄÚÈÝÊÇstringÀàÐÍµÄ
-	Postgraduate pos("Alex", "ÒÅ´«Ëã·¨µÄÓ¦ÓÃ,",true);
-	Fun(per);
-	Fun(und);
-	Fun(pos);
-	/*EasyShow(&per);          //µÚ¶þÖÖ³É¹¦ÔËÐÐ...
+	Undergraduate und("Lucy", 99, 95);  //æœ‰å¤šå°‘ä¸ªæ•°æ®å‘å°±å¡«å¤šå°‘ä¸ªæ•°æ®â€œâ€é‡Œé¢çš„å†…å®¹æ˜¯stringç±»åž‹çš„
+	Postgraduate pos("Alex", "é—ä¼ ç®—æ³•çš„åº”ç”¨,",true);
+	/*EasyShow(&per);          //ç¬¬äºŒç§æˆåŠŸè¿è¡Œ...
 	EasyShow(&und);
 	EasyShow(&pos);*/
-	/*Info* pInfo = &per;    //µÚÒ»ÖÖ³É¹¦ÔËÐÐ
+	/*Info* pInfo = &per;    //ç¬¬ä¸€ç§æˆåŠŸè¿è¡Œ
 	pInfo->Prompt();
 	pInfo->Show();
 	pInfo = &und;
